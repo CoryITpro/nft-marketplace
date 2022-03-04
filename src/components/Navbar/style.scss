@@ -115,10 +115,15 @@
         z-index: 1;
         cursor: pointer;
 
+        &-connected {
+          color: $green !important;
+        }
+
         & > svg {
           width: 55%;
           height: auto;
           height: intrinsic;
+          transition: 0.3s;
         }
       }
 
@@ -128,6 +133,15 @@
         margin-left: -24px;
         border: 2px solid rgba($color: $gray, $alpha: 0.4) !important;
         box-shadow: 0 0 4px rgba($color: $gray, $alpha: 0.4) !important;
+
+        &-connected {
+          border: 2px solid rgba($color: $green, $alpha: 0.4) !important;
+          box-shadow: 0 0 4px rgba($color: $green, $alpha: 0.4) !important;
+
+          & > button {
+            color: $green !important;
+          }
+        }
 
         & > button {
           padding-left: 24px;

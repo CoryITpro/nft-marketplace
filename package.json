@@ -15,6 +15,7 @@
     "@web3-react/walletconnect-connector": "^6.2.13",
     "@withvoid/melting-pot": "^1.6.0",
     "dotenv": "^16.0.0",
+    "ethers": "^5.5.4",
     "lodash": "^4.17.21",
     "node-sass": "^7.0.1",
     "prettier": "^2.5.1",

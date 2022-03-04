@@ -98,3 +98,124 @@ body {
     overflow: hidden;
   }
 }
+
+.ReactModal__Content {
+  & h3 {
+    font-size: 16px;
+    margin: 8px 0 8px 0;
+    color: $gray;
+  }
+
+  & h4 {
+    margin: 4px 0 8px;
+    color: $gray;
+  }
+
+  & > .modal-header {
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba($color: $gray, $alpha: 0.1);
+
+    & > svg {
+      color: $gray;
+      width: 12px;
+      min-width: 12px;
+      height: auto;
+      height: intrinsic;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  & > .modal-wallets {
+    grid-template: auto / 1fr 1fr;
+
+    & > button {
+      align-items: center;
+      background-color: transparent;
+      padding: 16px;
+      border: 1px solid rgba(112, 112, 112, 0.1);
+      cursor: pointer;
+
+      &:hover {
+        & > span {
+          color: $green;
+        }
+      }
+
+      & > div {
+        width: 64px;
+        height: 64px;
+        min-height: 64px;
+        align-items: center;
+        justify-content: center;
+
+        & > svg {
+          min-height: 100%;
+          height: auto;
+          height: intrinsic;
+        }
+      }
+
+      & > span {
+        height: 100%;
+        align-items: center;
+        text-transform: uppercase;
+        margin-top: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $gray;
+        transition: 0.3s;
+
+        @media (max-width: 425px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  & > .modal-disconnect {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 16px;
+
+    & > button {
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      background-color: transparent;
+      cursor: pointer;
+      border: none;
+      margin-top: 24px;
+      padding: 0 16px;
+      column-gap: 24px;
+      color: rgba($color: $gray, $alpha: 0.5);
+      transition: 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+
+      & > svg {
+        width: 16px;
+        min-width: 16px;
+        height: auto;
+        height: intrinsic;
+      }
+
+      & > span {
+        height: 24px;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+}
