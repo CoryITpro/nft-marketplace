@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.loading {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+  & > h2,
+  h3 {
+    color: rgba($color: $gray, $alpha: 0.8);
+  }
+}

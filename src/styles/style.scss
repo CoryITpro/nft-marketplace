@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap");
+@import "./variables.scss";
+
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  background-color: $black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 8px;
+  background: rgba($color: $gray, $alpha: 0.5);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 8px;
+  background: rgba($color: $gray, $alpha: 0.7);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#root {
+  width: 100%;
+}
+
+* {
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: Min(1280px, calc(100% - 48px));
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: Min(1440px, calc(100% - 48px));
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
+}
+
+.shadowed {
+  border: 2px solid rgba($color: $green, $alpha: 0.4) !important;
+  box-shadow: 0 0 4px rgba($color: $green, $alpha: 0.4) !important;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 0 8px rgba($color: $green, $alpha: 0.6) !important;
+  }
+}
+
+.rounded {
+  border-radius: 16px;
+  overflow: hidden;
+
+  &-sm {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  &-lg {
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  &-circle {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,147 @@
+@import "../../styles/variables.scss";
+
+.navbar {
+  width: 100%;
+  justify-content: center;
+  padding: 8px 0;
+
+  &-wrapper {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &-menu {
+    height: 100%;
+    align-items: center;
+  }
+
+  &-logo {
+    color: $gray;
+    transition: 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      color: $green;
+    }
+
+    & > svg {
+      width: 36px;
+      min-width: 36px;
+      height: auto;
+      height: intrinsic;
+    }
+
+    &-title {
+      width: 64px;
+
+      & > span {
+        margin-left: 8px;
+
+        &:first-child {
+          font-size: 16px;
+          font-weight: 800;
+        }
+
+        &:last-child {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &-links {
+    height: 100%;
+    align-items: center;
+    margin-left: 24px;
+
+    & > a {
+      height: 100%;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $gray;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 0 12px;
+      margin: 0 4px;
+      transition: 0.3s;
+
+      &:hover {
+        color: $green;
+        background-color: rgba($color: $green, $alpha: 0.1);
+      }
+    }
+  }
+
+  &-setting {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+
+    & > svg {
+      width: 24px;
+      height: auto;
+      height: intrinsic;
+      color: $gray;
+      cursor: pointer;
+      transition: 0.3s;
+      padding: 0 8px;
+      margin-right: 16px;
+
+      &:hover {
+        color: $green;
+        background-color: rgba($color: $green, $alpha: 0.1);
+      }
+    }
+
+    &-wallet {
+      height: 100%;
+      align-items: center;
+      color: $gray;
+      transition: 0.3s;
+
+      &:hover {
+        color: $green;
+      }
+
+      &-icon {
+        width: 36px;
+        min-width: 36px;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+        background-color: $black;
+        z-index: 1;
+        cursor: pointer;
+
+        & > svg {
+          width: 55%;
+          height: auto;
+          height: intrinsic;
+        }
+      }
+
+      &-main {
+        width: 120px;
+        height: 32px;
+        margin-left: -24px;
+        border: 2px solid rgba($color: $gray, $alpha: 0.4) !important;
+        box-shadow: 0 0 4px rgba($color: $gray, $alpha: 0.4) !important;
+
+        & > button {
+          padding-left: 24px;
+          width: 100%;
+          height: 100%;
+          border: none;
+          background-color: rgba($color: $gray, $alpha: 0.1);
+          font-size: 12px;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: $gray;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
