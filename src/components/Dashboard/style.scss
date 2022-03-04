@@ -1,0 +1,8 @@
+@import "../../styles/variables.scss";
+
+.dashboard {
+  width: 100%;
+  min-height: calc(100vh - 140px);
+  justify-content: center;
+  padding-top: 64px;
+}

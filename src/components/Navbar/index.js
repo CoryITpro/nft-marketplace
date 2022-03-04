@@ -39,7 +39,10 @@ const Navbar = () => {
         <div className="navbar-setting flex">
           <FontAwesomeIcon className="flex rounded-sm" icon={faGears} />
           <div className="navbar-setting-wallet flex">
-            <div className="navbar-setting-wallet-icon shadowed flex rounded-circle">
+            <NavLink
+              to={AppRoutes.ACCOUNT}
+              className="navbar-setting-wallet-icon shadowed flex rounded-circle"
+            >
               <FontAwesomeIcon
                 className={`flex${
                   account !== undefined && account !== ""
@@ -48,7 +51,7 @@ const Navbar = () => {
                 }`}
                 icon={faWallet}
               />
-            </div>
+            </NavLink>
             <div
               className={`navbar-setting-wallet-main rounded-sm${
                 account !== undefined && account !== ""

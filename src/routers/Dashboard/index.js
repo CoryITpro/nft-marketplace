@@ -1,3 +1,5 @@
-const Dashboard = () => <div className="dashboard">Dashboard</div>
+import DashboardContainer from "containers/Dashboard"
+
+const Dashboard = () => <DashboardContainer />
 
 export default Dashboard

@@ -1,13 +1,17 @@
 @import "../../styles/variables.scss";
 
 .navbar {
+  position: fixed;
   width: 100%;
   justify-content: center;
   padding: 8px 0;
+  background-color: rgba($color: $black-dark, $alpha: 0.6);
+  box-shadow: 0 0 2px rgba($color: $gray, $alpha: 0.4);
 
   &-wrapper {
     align-items: center;
     justify-content: flex-start;
+    height: 40px;
   }
 
   &-menu {
@@ -16,7 +20,7 @@
   }
 
   &-logo {
-    color: $gray;
+    color: $white;
     transition: 0.3s;
     text-decoration: none;
 
@@ -55,12 +59,16 @@
     align-items: center;
     margin-left: 24px;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     & > a {
       height: 100%;
       align-items: center;
       text-decoration: none;
       text-transform: uppercase;
-      color: $gray;
+      color: $white;
       font-size: 14px;
       font-weight: 800;
       padding: 0 12px;
@@ -83,7 +91,7 @@
       width: 24px;
       height: auto;
       height: intrinsic;
-      color: $gray;
+      color: $white;
       cursor: pointer;
       transition: 0.3s;
       padding: 0 8px;
@@ -98,7 +106,7 @@
     &-wallet {
       height: 100%;
       align-items: center;
-      color: $gray;
+      color: $white;
       transition: 0.3s;
 
       &:hover {
@@ -106,6 +114,7 @@
       }
 
       &-icon {
+        color: $white;
         width: 36px;
         min-width: 36px;
         height: 36px;
@@ -131,8 +140,8 @@
         width: 120px;
         height: 32px;
         margin-left: -24px;
-        border: 2px solid rgba($color: $gray, $alpha: 0.4) !important;
-        box-shadow: 0 0 4px rgba($color: $gray, $alpha: 0.4) !important;
+        border: 2px solid rgba($color: $white, $alpha: 0.4) !important;
+        box-shadow: 0 0 4px rgba($color: $white, $alpha: 0.4) !important;
 
         &-connected {
           border: 2px solid rgba($color: $green, $alpha: 0.4) !important;
@@ -152,7 +161,7 @@
           font-size: 12px;
           font-weight: 600;
           text-transform: uppercase;
-          color: $gray;
+          color: $white;
           cursor: pointer;
         }
       }

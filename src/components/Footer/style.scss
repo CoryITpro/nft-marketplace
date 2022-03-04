@@ -1,0 +1,70 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  width: 100%;
+  justify-content: center;
+  padding: 24px 0;
+  box-shadow: 0 0 2px rgba($color: $gray, $alpha: 0.4);
+
+  @media (max-width: 768px) {
+    padding-bottom: 88px;
+  }
+
+  &-wrapper {
+    grid-template: auto / 320px 1fr;
+    grid-column-gap: 64px !important;
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba($color: $gray, $alpha: 0.4);
+
+    @media (max-width: 1024px) {
+      grid-template: auto / 1fr;
+    }
+  }
+
+  &-introduce {
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+    }
+
+    & > h3 {
+      color: $white;
+      margin: 4px 0;
+    }
+
+    & > p {
+      margin: 0;
+      color: $gray;
+      font-size: 14px;
+    }
+  }
+
+  &-links {
+    grid-template: auto / 1fr 1fr 1fr 1fr;
+
+    @media (max-width: 768px) {
+      grid-template: auto / 1fr 1fr;
+    }
+
+    & > div {
+      & > h4 {
+        color: $white;
+        margin-top: 4px;
+      }
+
+      & > a {
+        text-decoration: none;
+        font-size: 14px;
+        font-style: 300;
+        color: $gray;
+        transition: 0.3s;
+
+        &:hover {
+          color: $green;
+          font-style: 500;
+        }
+      }
+    }
+  }
+}

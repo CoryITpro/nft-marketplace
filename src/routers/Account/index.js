@@ -1,3 +1,5 @@
-const Account = () => <div className="account">Account</div>
+import AccountContainer from "containers/Account"
+
+const Account = () => <AccountContainer />
 
 export default Account
